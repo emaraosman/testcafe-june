@@ -69,7 +69,7 @@ const setupFixture = () => {
       /** Inject the tracking snippet (doesn't persist across page loads) **/
       // TODO(dabrady) How do we block the test until this is ready, each time we inject?
       {
-        path: path.join(__dirname, '../../tracking.js')
+        // path: path.join(__dirname, '../../tracking.js')
       }
     );
 };
