@@ -45,33 +45,33 @@ const setupFixture = () => {
   return fixture(`${credentials.customerName} regression tests\nOrigin: ${origin}`)
     .page(origin)
     .meta({ origin })
-    // .clientScripts(
-    //   {
-    //     content: `
-    //       /**
-    //        * Our test tracking requires knowledge about the tests being tracked. Since TestCafe
-    //        * doesn't let us inject dependencies into the scripts we inject, we are forced to
-    //        * make use of the global state here.
-    //        **/
-    //       window.ProdPerfectTestData ||= {};
-    //       Object.assign(window.ProdPerfectTestData, {
-    //         version: ${ envDataToReport.version },
-    //         cliCommand: ${ envDataToReport.cliCommand },
-    //         testSuite: ${ envDataToReport.testSuite },
-    //         testSuiteRunId: ${ envDataToReport.testSuiteRunId },
-    //       });
-    //     `
-    //   },
-    //   /** Bake the tracking cookie as needed (they persist across page loads) **/
-    //   {
-    //     path: path.join(__dirname, 'setTestDataCookie.js')
-    //   },
-    //   /** Inject the tracking snippet (doesn't persist across page loads) **/
-    //   // TODO(dabrady) How do we block the test until this is ready, each time we inject?
-    //   {
-    //     // path: path.join(__dirname, '../../tracking.js')
-    //   }
-    // );
+    .clientScripts(
+      {
+        content: `
+          /**
+           * Our test tracking requires knowledge about the tests being tracked. Since TestCafe
+           * doesn't let us inject dependencies into the scripts we inject, we are forced to
+           * make use of the global state here.
+           **/
+          window.ProdPerfectTestData ||= {};
+          Object.assign(window.ProdPerfectTestData, {
+            version: ${ envDataToReport.version },
+            cliCommand: ${ envDataToReport.cliCommand },
+            testSuite: ${ envDataToReport.testSuite },
+            testSuiteRunId: ${ envDataToReport.testSuiteRunId },
+          });
+        `
+      },
+      /** Bake the tracking cookie as needed (they persist across page loads) **/
+      {
+        path: path.join(__dirname, 'setTestDataCookie.js')
+      },
+      /** Inject the tracking snippet (doesn't persist across page loads) **/
+      // TODO(dabrady) How do we block the test until this is ready, each time we inject?
+      // {
+      //   // path: path.join(__dirname, '../../tracking.js')
+      // }
+    );
 };
 
 /**
