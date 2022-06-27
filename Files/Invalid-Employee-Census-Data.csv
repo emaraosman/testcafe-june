@@ -1,0 +1,24 @@
+Employee ID,Start Date,Name,Reports To,Department,Job Title,Job Level,Location,Equity,Base Salary,Annual Bonus,Commissions,Gender,Ethnicity,Benchmark Role,Currency Code,Cash Adjustment,Equity Adjustment
+10001,2015-01-01,No Department - shows error,No Benchmark Role - Optional - no error,,Software Engineer,1,"Portland, OR",50000,150000,20000,,Male,White,Software Engineer,USD,0.8,0.8
+10002,1971-11-29,Start date is >50 years ago - Optional - shows error,No Benchmark Role - Optional - no error,Engineering,Software Engineer,1,"New York, NY",30000,100000,10000,,Female,Asian,Software Engineer,USD,0.8,0.8
+10002,2019-01-01,Same Custom Id - shows error,No Benchmark Role - Optional - no error,Product,"VP, Product Strategy",1,"Pittsburg, PA",,205000,30750,,Female,Asian,"VP, Product",USD,0.8,0.8
+10003,2015-01-01,Invalid Currency Code - shows error,No Benchmark Role - Optional - no error,Product,"VP, Product Strategy",1,"Pittsburg, PA",140000,205000,30750,,Female,Asian,"VP, Product",AAA,0.8,0.8
+10004,2033-01-01,Start date is 10 years into future - Optional - shows error,No Benchmark Role - Optional - no error,Product,"VP, Product Strategy",1,"Pittsburg, PA",140000,205000,30750,,Female,Asian,"VP, Product",USD,0.8,0.8
+10003,2015-01-01,"Invalid Currency Code, same id and no department - shows error",No Benchmark Role - Optional - no error,,"VP, Product Strategy",1,"Pittsburg, PA",140000,205000,30750,,Female,Asian,"VP, Product",AAA,,
+10005,2014-01-01,,No Benchmark Role - Optional - no error,Product,Product Manager,1,"New York, NY",30000,140000,,,Male,Hispanic,Product Manager,USD,0.8,0.8
+10006,2019-01-01,No Equity Adjustment - Optional - no error,No Benchmark Role - Optional - no error,Product,"VP, Product Strategy",1,"Pittsburg, PA",,205000,30750,,Female,Asian,"VP, Product",USD,0.8,
+10007,2015-01-01,No Job Title - no error,No Benchmark Role - Optional - no error,Product,,1,"Pittsburg, PA",15000,205000,10000,1000,Male,White,,USD,0.8,0.8
+10008,2017-07-24,"No City, state present - no error",No Benchmark Role - Optional - no error,Operations,Operations Manager,1,UT,20000,100000,10000,,Female,Asian,Operations Mgmt,USD,0.8,0.8
+10009,2017-07-24,"No State, city present - no error",No Benchmark Role - Optional - no error,Engineering,Software Engineer,1,Santa Monica,25000,100000,10000,,Female,White,Software Engineer,USD,0.8,0.8
+10010,2017-04-03,No Equity - no error,No Benchmark Role - Optional - no error,Engineering,Software Engineer,1,"New York, NY",,110000,10000,,Female,White,Software Engineer,USD,0.8,0.8
+10011,2017-08-14,No Base Salary - no error,No Benchmark Role - Optional - no error,Product,Product Manager,1,"Pittsburg, PA",35000,,10000,,Male,Asian,Product Manager,USD,0.8,0.8
+10012,2017-11-27,No International Currency Code - no error,No Benchmark Role - Optional - no error,Operations,Operations Manager,1,"New Cairo, Egypt",6000,22800,6840,,Male,Asian,Operations Mgmt,,0.8,0.8
+10013,2015-01-01,No Reports To - no error,No Benchmark Role - Optional - no error,Product,Product Manager,1,"Pittsburg, PA",8000,140000,10000,,Male,Asian,Product Manager,USD,0.8,0.8
+10014,,No Start Date - no error,No Benchmark Role - Optional - no error,Presales,Head of Presales,1,"Grosse Pointe, MI",10000,120000,10000,,Male,Asian,Head of Presales,USD,0.8,0.8
+10015,2019-01-01,No Job Level - Optional - no error,No Benchmark Role - Optional - no error,Presales,Director of Sales Engineering,,"Grosse Pointe, MI",14000,200000,10000,,Male,Asian,Director of Sales Engineering,USD,0.8,0.8
+10016,2019-01-01,No Annual Bonus - Optional  - no error,No Benchmark Role - Optional - no error,Engineering,Software Engineer,1,"New York, NY",20000,100000,,,Male,Asian,Software Engineer,USD,0.8,0.8
+10017,2019-01-01,No Commissions - Optional - no error,No Benchmark Role - Optional - no error,Engineering,Software Engineer,1,"New York, NY",25000,100000,10000,,Female,Asian,Software Engineer,USD,0.8,0.8
+10018,2019-01-01,No Gender - Optional - no error,No Benchmark Role - Optional - no error,Product,"VP, Product Strategy",1,"Pittsburg, PA",10000,205000,30750,,,Asian,"VP, Product",USD,0.8,0.8
+10019,2019-01-01,No Ethnicity - Optional - no error,No Benchmark Role - Optional - no error,Product,"VP, Product Strategy",1,"Pittsburg, PA",20000,205000,30750,,Female,,"VP, Product",USD,0.8,0.8
+10020,2019-01-01,No Benchmark Role - Optional - no error,,Product,"VP, Product Strategy",1,"Pittsburg, PA",30000,205000,30750,,Female,Asian,,USD,0.8,0.8
+10021,2019-01-01,No Cash Adjustment - Optional - no error,No Benchmark Role - Optional - no error,Product,"VP, Product Strategy",1,"Pittsburg, PA",,205000,30750,,Female,Asian,"VP, Product",USD,,0.8

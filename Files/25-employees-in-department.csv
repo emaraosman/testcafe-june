@@ -1,0 +1,52 @@
+Employee ID,Start Date,Name,Reports To,Department,Job Title,Job Level,Location,Equity,Base Salary,Annual Bonus,Commissions,Gender,Ethnicity,Benchmark Role,Country Code,Currency Code,Cash Adjustment,Equity Adjustment
+Optional,Optional,Required for all,"Optional
+Employee ID of manager",Required for all,"Required for all
+Customer Job title Provided","Optional Override
+Must be 0-8
+(7 is VP Level,
+8 is SVP Level,
+0 is C-Suite Level)","Required for all
+City, State (Country)
+(eg. New York, NY)","Required for equity benchmarks
+Number of Shares","Required for all
+In local currency","Optional
+In local currency","Optional
+In local currency","Optional
+Must be
+Male/Female/Non-conforming","Optional
+Can be comma separated, any of:
+African-American, Black, African, East Asian, Hispanic, Latinx, Middle Eastern, North African, Native American, Alaska Native, First Nations, Native Hawaiian, Pacific Islander, South Asian, Southeast Asian, White","Optional
+Benchmark role match","Required only
+for international
+ISO 3166 - 1 alpha-2 format
+(eg. CA, FR, SR)","Required only
+for international
+ISO Currency Code
+(eg. CAD, EUR, RSD)","Optional adjustment from SF Bay Area market
+Must be a number between .01 - .99","Optional adjustment from SF Bay Area market
+Must be a number between .01 - .99"
+,09/01/2018,P Aaron,,Dept Two,CEO,,"Haleiwa, HI",0,0,,,Male,White,CEO,,,1.00,
+,09/01/2018,W Kiser,,Dept Two,Software Engineer,,"Seattle, WA","93,851","170,000",,,Male,White,Software Engineer,,,0.90,
+,10/01/2018,A Karanam,,Dept Two,Software Engineer,,"Brooklyn, NY","86,631","170,000",,,Male,South Asian,Software Engineer,,,0.90,
+,10/01/2018,E Butler,,Dept Two,Software Engineer,,"Brooklyn, NY","93,851","170,000",,,Male,White,Software Engineer,,,0.90,
+,11/05/2018,V Unnava,,Dept Two,Software Engineer,,"New York, NY","125,851","140,000",,,Male,South Asian,Software Engineer,,,0.90,
+,12/10/2018,A Buckfire,,Dept Two,Software Engineer,,"New York, NY","50,000","160,000",,,Female,White,Software Engineer,,,0.90,
+,02/01/2019,Y Koh,,Dept Two,Insurance Product Analyst,,"New York, NY","50,000","155,000",,,Female,East Asian,Product Manager,,,0.90,
+,05/28/2019,S Rockwood,,Dept Two,Actuary,,"New York, NY","60,000","180,000",,,Male,White,Risk Analyst,,,0.90,
+,08/12/2019,H Tong,,Dept Two,Software Engineer,,"Brooklyn, NY","60,000","170,000",,,Male,East Asian,Software Engineer,,,0.90,
+,08/12/2019,Y Karklin,,Dept Two,Data Scientist,,"Brooklyn, NY","45,000","180,000",,,Male,White,Data Scientist,,,0.90,
+,09/23/2019,G Schindler,,Dept Two,Designer,,"Denver, CO","45,000","160,000",,,Male,White,Product / UI Designer,,,0.85,
+,09/23/2019,T Laity,,Dept Two,Data Scientist,,"Brooklyn, NY","15,000","150,000",,,Male,Southeast Asian,Data Scientist,,,0.90,
+,10/14/2019,J Lin,,Dept Two,Software Engineer,,"Bronx, NY","40,000","165,000",,,Male,East Asian,Software Engineer,,,0.90,
+,10/28/2019,K Huang,,Dept Two,Actuarial Analyst,,"Livingston, NJ","15,000","130,000",,,Male,East Asian,Risk Analyst,,,0.90,
+,11/22/2019,A Abel,,Dept Two,Network Development,,"Simi Valley, CA","25,000","180,000",,,Male,White,Network Engineer,,,0.90,
+,12/30/2019,G Padilla Urias,,Dept Two,Operations,,"New York, NY","2,000","100,000",,,Male,Hispanic,Operations Specialist,,,0.90,
+,12/30/2019,K Rivera,,Dept Two,Operations,,"Cherry Hill, NJ","8,000","135,000",,,Non-conforming,Hispanic,Operations Specialist,,,0.90,
+,01/27/2020,S Errecart,,Dept Two,Network Recruiter,,"Incline Village, NV","1,000","95,000",,,Female,White,Technical Recruiter,,,0.80,
+,02/03/2020,A Galela,,Dept Two,Network Recruiter,,"Long Beach, CA",500,"100,000",,,Male,Southeast Asian,Technical Recruiter,,,0.90,
+,02/25/2020,S Miller,,Dept Two,"Software Engineer, Information Technology",,"New York, NY","2,000","100,000",,,Non-conforming,Black,IT Systems Engineer,,,0.90,
+,05/28/2019,S Stu,,Dept Two,Actuary,,"New York, NY","60,000","180,000",,,Male,White,Risk Analyst,,,0.90,
+,08/12/2019,S Tong,,Dept Two,Software Engineer,,"Brooklyn, NY","60,000","170,000",,,Male,East Asian,Software Engineer,,,0.90,
+,08/12/2019,Y Card,,Dept Two,Data Scientist,,"Brooklyn, NY","45,000","180,000",,,Male,White,Data Scientist,,,0.90,
+,09/23/2019,H Schind,,Dept Two,Designer,,"Denver, CO","45,000","160,000",,,Male,White,Product / UI Designer,,,0.85,
+,09/23/2019,T Lake,,Dept Two,Data Scientist,,"Brooklyn, NY","15,000","150,000",,,Male,Southeast Asian,Data Scientist,,,0.90,
