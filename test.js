@@ -1,48 +1,7 @@
 const { Selector } = require("testcafe");
-const { setupFixture, setTestContext, wrapTest, } = require("./utilities/main_utils");
+const { setTestContext} = require("./utilities/main_utils");
 const { setupCustomUtilities } = require("./utilities/opencomp_utils");
 const { credentials } = require("./utilities/credentials");
-
-const meta = {
-  id: "660e7170-0ae3-11ec-9a03-0242ac130003",
-  steps: [
-    'Login',
-		'Create a new scenario (name: "Scenario {test_number} - (HH:mm:ss)")',
-		'Set Total Funds to "$10-25 million" ,Funding Stage to "Series A",BenchMark as "2022Q1"',
-		'Import 51 employees file',
-		'Click save',
-    'ASSERTIONS: assert url',
-    'ASSERTION: "Upgrade" button exists in banner',
-    'ASSERTION: Upgrade on navbar exists',
-    'Click "Upgrade" on navbar',
-    'Click "Learn More" link',
-    'ASSERTION: url matches "\/companies\/[0-9]+\/upgrade/"',
-    'ASSERTION: "Team Plan" exists',
-    'ASSERTION: "Your Current Plan" exists',
-    'ASSERTION: selected dropdown value in Professional plan is "75 employees $12,600".',
-    'Click "Purchase" under Professional Plan',
-    'ASSERTION: url matches "/https:\/\/checkout.stripe.com\/pay\/"',
-    'Fill card details',
-    'Click "Subscribe"',
-    'ASSERTION: url matches https://app.opencomp.co/scenarios/{scenario id}?action=subscribe',
-    'ASSERTION: banner text is not displayed',
-    'ASSERTION: "Hey there {first name}! Congrats on upgrading your subscription! Would you like to schedule a meeting with our Customer Success Team to learn more?" exists in pop up window',
-    'Close pop up',
-    'Click "Diversity, Equity & inclusion" tab',
-    'ASSERTION : Assert for the page title : Diversity, Equity & Inclusion',
-    'Click "By Gender" dropdown',
-    'Select "By Ethnicity" option',
-    'ASSERTION : Assert for any Ethnicity text adjacent to the chart',
-    'ASSERTION : Assert for Employee group stats',
-    'Delete scenario',
-		'Logout'
-
-  ],
-  nodes: [
-    'a0fb4808ecfc736599f5b0731d11e952', 'c0f91efccc1935f6abe013c33b9452b3', 'a0fb4808ecfc736599f5b0731d11e952', 'a0fb4808ecfc736599f5b0731d11e952', 'c0f91efccc1935f6abe013c33b9452b3', 'a0fb4808ecfc736599f5b0731d11e952', '5a4f08c221810ed1fd8dd1997b084631', '6df4b7b71d4fc91d88ac7790c116f7c8', '5a4f08c221810ed1fd8dd1997b084631', 'a2e08752de59d2f775291c476d3e370f', '9792e67715d918d9b27956e9d6d76c11', '9792e67715d918d9b27956e9d6d76c11', '714adc404cc78e8b72f70b69a2f80fcd', 'da0729433d6c07a064ade81c5957792c', '9792e67715d918d9b27956e9d6d76c11', '9792e67715d918d9b27956e9d6d76c11', '9792e67715d918d9b27956e9d6d76c11', '714adc404cc78e8b72f70b69a2f80fcd', 'da0729433d6c07a064ade81c5957792c', '9792e67715d918d9b27956e9d6d76c11', '9792e67715d918d9b27956e9d6d76c11', '9792e67715d918d9b27956e9d6d76c11'
-  ],
-  proposedTestcaseIds: ['6f7636853dd93cac79f63e4f2b44b5ca', 'c3a6227a3465391971fe3d1f40d86109'],
-};
 
   async (t) => {
     const { getLocation } = setTestContext(t);
