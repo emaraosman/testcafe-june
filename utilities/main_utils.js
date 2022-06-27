@@ -69,7 +69,7 @@ const setupFixture = () => {
       /** Inject the tracking snippet (doesn't persist across page loads) **/
       // TODO(dabrady) How do we block the test until this is ready, each time we inject?
       // {
-      //   // path: path.join(__dirname, '../../tracking.js')
+      //   path: path.join(__dirname, '../../tracking.js')
       // }
     );
 };
@@ -81,6 +81,11 @@ const setupFixture = () => {
  * @param {string} meta.id - The test id
  * @returns {function} Returns a TestCafe `test` function with chained meta object and (if necessary) skip method
  */
+// const wrapTest = ({ id, ...meta }) => {
+//   return skipTestIds.includes(id) && !(args.debug || args.edit)
+//     ? test.meta({ id, ...meta }).skip
+//     : test.meta({ id, ...meta });
+// };
 
 const setTestContext = (t) => {
   const getLocation = ClientFunction(() => document.location.href).with({boundTestRun: t});
@@ -120,6 +125,7 @@ const setTestContext = (t) => {
 
 module.exports.faker = faker;
 module.exports.origin = origin;
+// module.exports.wrapTest = wrapTest;
 module.exports.setupFixture = setupFixture;
 module.exports.setTestContext = setTestContext;
 module.exports.testSuiteRunId = testSuiteRunId;
