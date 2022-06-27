@@ -26,6 +26,9 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v1
 
+      - name: Install faker from 'npm'
+      uses: DevExpress/faker@latest
+
       # Runs a single command using the runners shell
       - name: Install TestCafe from 'npm' and run tests
         uses: DevExpress/testcafe-action@latest
