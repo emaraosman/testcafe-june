@@ -39,7 +39,7 @@ const envDataToReport = {
 //   }
 // };
 
-const skipTestIds = readSkipConfig();
+// const skipTestIds = readSkipConfig();
 
 const setupFixture = () => {
   return fixture(`${credentials.customerName} regression tests\nOrigin: ${origin}`)
@@ -81,11 +81,11 @@ const setupFixture = () => {
  * @param {string} meta.id - The test id
  * @returns {function} Returns a TestCafe `test` function with chained meta object and (if necessary) skip method
  */
-const wrapTest = ({ id, ...meta }) => {
-  return skipTestIds.includes(id) && !(args.debug || args.edit)
-    ? test.meta({ id, ...meta }).skip
-    : test.meta({ id, ...meta });
-};
+// const wrapTest = ({ id, ...meta }) => {
+//   return skipTestIds.includes(id) && !(args.debug || args.edit)
+//     ? test.meta({ id, ...meta }).skip
+//     : test.meta({ id, ...meta });
+// };
 
 const setTestContext = (t) => {
   const getLocation = ClientFunction(() => document.location.href).with({boundTestRun: t});
