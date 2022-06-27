@@ -1,0 +1,7 @@
+Employee ID,Name,Start Date,Gender,Department,Job Title,Benchmark Role,Job Level,Location,Currency Code,Total Cash
+,,,,,,,,,,
+163731,USER Location (only),2022-02-07,none,Geo Tool,Software Engineer Mobile,Software Engineer - Mobile,3,"San Diego, CA",USD,137700
+179757,USER Role (only),2022-02-21,none,Geo Tool,Accountant,Accountant,3,"Chicago, IL",USD,82450
+122222222,USER Role (with location override),2022-02-23,none,Geo Tool,Administrative Assistant,Administrative Assistant,3,"Seattle, WA",USD,64800
+190130,USER Executive (with location and role),2022-02-23,none,Geo Tool,VP Sales,VP Sales,7,"New York, NY",USD,371450
+207003,User Executive (Only),2022-02-25,none,Geo Tool,VP Engineering,VP Engineering,7,"Houston, TX",USD,240550

@@ -1,0 +1,78 @@
+Employee ID,Start Date,Name,Reports To,Department,Job Title,Job Level,Location,Equity,Base Salary,Annual Bonus,Commissions,Gender,Ethnicity,Benchmark Role,Country Code,Currency Code,Cash Adjustment,Equity Adjustment
+Optional,Optional,Required for all,"Optional
+Employee ID of manager",Required for all,"Required for all
+Customer Job title Provided","Optional Override
+Must be 0-8
+(7 is VP Level,
+8 is SVP Level,
+0 is C-Suite Level)","Required for all
+City, State (Country)
+(eg. New York, NY)","Required for equity benchmarks
+Number of Shares","Required for all
+In local currency","Optional
+In local currency","Optional
+In local currency","Optional
+Must be
+Male/Female/Non-conforming","Optional
+Can be comma separated, any of:
+African-American, Black, African, East Asian, Hispanic, Latinx, Middle Eastern, North African, Native American, Alaska Native, First Nations, Native Hawaiian, Pacific Islander, South Asian, Southeast Asian, White","Optional
+Benchmark role match","Required only
+for international
+ISO 3166 - 1 alpha-2 format
+(eg. CA, FR, SR)","Required only
+for international
+ISO Currency Code
+(eg. CAD, EUR, RSD)","Optional adjustment from SF Bay Area market
+Must be a number between .01 - .99","Optional adjustment from SF Bay Area market
+Must be a number between .01 - .99"
+,09/01/2018,P Aaron,,Department,CEO,,"Haleiwa, HI",0,0,,,Male,White,CEO,,,1.00,
+,09/01/2018,W Kiser,,Department,Software Engineer,,"Seattle, WA","93,851","170,000",,,Male,White,Software Engineer,,,0.90,
+,10/01/2018,A Karanam,,Department,Software Engineer,,"Brooklyn, NY","86,631","170,000",,,Male,South Asian,Software Engineer,,,0.90,
+,10/01/2018,E Butler,,Department,Software Engineer,,"Brooklyn, NY","93,851","170,000",,,Male,White,Software Engineer,,,0.90,
+,11/05/2018,V Unnava,,Department,Software Engineer,,"New York, NY","125,851","140,000",,,Male,South Asian,Software Engineer,,,0.90,
+,12/10/2018,A Buckfire,,Department,Software Engineer,,"New York, NY","50,000","160,000",,,Female,White,Software Engineer,,,0.90,
+,02/01/2019,Y Koh,,Department,Insurance Product Analyst,,"New York, NY","50,000","155,000",,,Female,East Asian,Product Manager,,,0.90,
+,05/28/2019,S Rockwood,,Department,Actuary,,"New York, NY","60,000","180,000",,,Male,White,Risk Analyst,,,0.90,
+,08/12/2019,H Tong,,Department,Software Engineer,,"Brooklyn, NY","60,000","170,000",,,Male,East Asian,Software Engineer,,,0.90,
+,08/12/2019,Y Karklin,,Department,Data Scientist,,"Brooklyn, NY","45,000","180,000",,,Male,White,Data Scientist,,,0.90,
+,09/23/2019,G Schindler,,Department,Designer,,"Denver, CO","45,000","160,000",,,Male,White,Product / UI Designer,,,0.85,
+,09/23/2019,T Laity,,Department,Data Scientist,,"Brooklyn, NY","15,000","150,000",,,Male,Southeast Asian,Data Scientist,,,0.90,
+,10/14/2019,J Lin,,Department,Software Engineer,,"Bronx, NY","40,000","165,000",,,Male,East Asian,Software Engineer,,,0.90,
+,10/28/2019,K Huang,,Department,Actuarial Analyst,,"Livingston, NJ","15,000","130,000",,,Male,East Asian,Risk Analyst,,,0.90,
+,11/22/2019,A Abel,,Department,Network Development,,"Simi Valley, CA","25,000","180,000",,,Male,White,Network Engineer,,,0.90,
+,12/30/2019,G Padilla Urias,,Department,Operations,,"New York, NY","2,000","100,000",,,Male,Hispanic,Operations Specialist,,,0.90,
+,12/30/2019,K Rivera,,Department,Operations,,"Cherry Hill, NJ","8,000","135,000",,,Non-conforming,Hispanic,Operations Specialist,,,0.90,
+,01/27/2020,S Errecart,,Department,Network Recruiter,,"Incline Village, NV","1,000","95,000",,,Female,White,Technical Recruiter,,,0.80,
+,02/03/2020,A Galela,,Department,Network Recruiter,,"Long Beach, CA",500,"100,000",,,Male,Southeast Asian,Technical Recruiter,,,0.90,
+,02/25/2020,S Miller,,Department,"Software Engineer, Information Technology",,"New York, NY","2,000","100,000",,,Non-conforming,Black,IT Systems Engineer,,,0.90,
+,3/9/2020,E Zhang,,Department,Data Analyst,,"New York, NY","25,000","150,000",,,Male,East Asian,Data Analyst,,,0.90,
+,03/09/2020,J Caragian,,Department,Product Manager,,"Middletown, NJ","40,000","170,000",,,Female,White,Product Manager,,,0.90,
+,03/30/2020,C Wong,,Department,Business Development,,"New York, NY","10,000","155,000",,,Male,East Asian,Business Developer,,,0.90,
+,03/30/2020,H Goel,,Department,Network Development Representative,,"Sherman Oaks, CA","1,500","75,000",,,Female,South Asian,Lead Development Rep,,,0.90,
+,03/30/2020,N Tecklu,,Department,Associate Product Manager,,"Seattle, WA","15,000","130,000",,,Female,Black,Product Manager,,,0.90,
+,03/30/2020,N Roon,,Department,Network Development Representative,,"Brooklyn, NY","2,500","85,000",,,Female,Middle Eastern,Lead Development Rep,,,0.90,
+,05/04/2020,J Leon,,Department,Operations,,"San Francisco, CA","10,000","170,000",,,Male,White,Operations Specialist,,,1.00,
+,05/11/2020,P Skurman,,Department,Operations,,"New York, NY","45,000","170,000",,,Male,White,Operations Specialist,,,0.90,
+,06/08/2020,A Klein,,Department,Mobile Web Engineer,,"Sharon, MA","25,000","160,000",,,Male,White,Web Engineer,,,0.90,
+,06/08/2020,G Breckenridge,,Department,Customer Success,,"Jersey City, NJ","7,500","175,000",,,Female,White,Customer Success Manager,,,0.90,
+,06/15/2020,D Victor,,Department,Finance Lead,,"Denver, CO","45,833","185,000",,,Male,White,Finance Mgmt,,,0.85,
+,6/15/2020,S Figueroa,,Department,Product Design Lead,,"Montclair, NJ","35,000","185,000",,,Male,Hispanic,Product Mgmt,,,0.90,
+,06/22/2020,T Edebohls,,Department,Business Development Lead,,"Seattle, WA","100,000","250,000",,,Male,White,Business Development Mgmt,,,0.90,
+,6/29/2020,D Cade,,Department,Engineering Lead,,"El Paso, TX","45,000","165,000",,,Male,White,Software Engineering Mgmt,,,0.85,
+,06/29/2020,S Keller,,Department,Data Scientist,,"San Francisco, CA","35,000","160,000",,,Male,White,Data Scientist,,,1.00,
+,06/29/2020,S Shah,,Department,Backend Engineer,,"New York, NY","6,500","140,000",,,Male,South Asian,Backend Engineer,,,0.90,
+,07/01/2020,C Kenerson,,Department,Dental Director,,"Sausalito, CA","15,000","165,000",,,Female,White,Regulatory Compliance Mgmt,,,1.00,
+,07/01/2020,D Smyth,,Department,Product Manager,,"Hoboken, NJ","50,000","170,000",,,Male,White,Product Manager,,,0.90,
+,07/13/2020,E Lehman-Borer,,Department,Backend Engineer,,"Brooklyn, NY","18,000","160,000",,,Male,White,Backend Engineer,,,0.90,
+,07/20/2020,A Jarara,,Department,Mobile Web Engineer,,"Arverne, NY","7,500","150,000",,,Male,Middle Eastern,Web Engineer,,,0.90,
+,07/20/2020,S Ryun Yu,,Department,Operations Associate,,"Long Island City, NY","2,500","70,000",,,Female,East Asian,Operations Specialist,,,0.90,
+,07/23/2020,S Yoon,,Department,Product Designer,,"Astoria, NY","10,000","135,000",,,Female,East Asian,Product / UI Designer,,,0.90,
+,07/27/2020,E Arnold,,Department,Recruiting Operations,,"Corona, CA","4,000","110,000",,,Male,Black,Recruiter,,,0.90,
+,7/27/2020,J Hong,,Department,Mobile Web Engineer,,"Brooklyn, NY","7,500","135,000",,,Female,East Asian,Web Engineer,,,0.90,
+,07/27/2020,L Spotts,,Department,Sales Director,,"Lakewood, CO","27,500","190,000",,,Female,White,Field Sales Mgmt,,,0.85,
+,08/10/2020,E Doyle,,Department,Support Specialist,,"Brooklyn, NY","1,000","75,000",,,Female,White,Support Technician,,,0.90,
+,08/24/2020,D Contomichalos,,Department,Operations,,"New York City, NY","2,500","70,000",,,Male,White,Operations Specialist,,,0.90,
+,08/24/2020,J Jung,,Department,Mobile Web Engineer,,"Whitestone, NY","7,500","125,000",,,Female,East Asian,Web Engineer,,,0.90,
+,08/24/2020,R Kesmodel,,Department,Head of Sales,,"Tiburon, CA","183,000","300,000",,,Male,White,VP Sales,,,1.00,
+,8/31/2020,A Pace,,Department,Sales Director,,"Treasure Island, FL","40,000","300,000",,,Male,White,Field Sales Mgmt,,,0.80,
+,09/08/2020,Y Abrol,,Department,"Software Engineer, Backend",,"Jackson Heights, NY","35,000","180,000",,,Female,East Asian,Backend Engineer,,,0.90,

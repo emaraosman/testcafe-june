@@ -1,0 +1,38 @@
+Employee ID,Start Date,Name,Reports To,Department,Job Title,Job Level,Location,Equity,Base Salary,Annual Bonus,Commissions,Gender,Ethnicity,Benchmark Role,Country Code,Currency Code,Cash Adjustment,Equity Adjustment
+Optional,Optional,Required for all,"Optional
+Employee ID of manager",Required for all,"Required for all
+Customer Job title Provided","Optional Override
+Must be 0-8
+(7 is VP Level,
+8 is SVP Level,
+0 is C-Suite Level)","Required for all
+City, State (Country)
+(eg. New York, NY)","Required for equity benchmarks
+Number of Shares","Required for all
+In local currency","Optional
+In local currency","Optional
+In local currency","Optional
+Must be
+Male/Female/Non-conforming","Optional
+Can be comma separated, any of:
+African-American, Black, African, East Asian, Hispanic, Latinx, Middle Eastern, North African, Native American, Alaska Native, First Nations, Native Hawaiian, Pacific Islander, South Asian, Southeast Asian, White","Optional
+Benchmark role match","Required only
+for international
+ISO 3166 - 1 alpha-2 format
+(eg. CA, FR, SR)","Required only
+for international
+ISO Currency Code
+(eg. CAD, EUR, RSD)","Optional
+Discount/premium from market
+Must be a number between .01 - 1.99","Optional
+Discount/premium from market
+Must be a number between .01 - 1.99"
+,,Fahad,,Engineering1,CEO,,Califorina,Accountant,"5,000",,,,,,,,,
+,,Ali,,Engineering1,Manager,,Califorina,Accountant,"5,000",,,,,,,,,
+,,Hasan,,Engineering1,Manager,,Califorina,Accountant,"5,000",,,,,,,,,
+,,Joseph,,Engineering1,Manager,,Califorina,Accountant,"5,000",,,,,,,,,
+,,Chris,,Engineering1,Manager,,Califorina,Accountant,"5,000",,,,,,,,,
+,,Ayo,,Engineering1,Manager,,Califorina,Accountant,"5,000",,,,,,,,,
+,,Amna,,Engineering1,Manager,,Califorina,Accountant,"5,000",,,,,,,,,
+,,Nipun,,Engineering1,Manager,,Califorina,Accountant,"5,000",,,,,,,,,
+,,Rajdeep,,Engineering1,Manager,,Califorina,Accountant,"5,000",,,,,,,,,

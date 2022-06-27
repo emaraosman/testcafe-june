@@ -4,7 +4,7 @@ name: Basic TestCafe Workflow
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "master" branch. Test if "master works or should be Main"
+  # Triggers the workflow on push or pull request events but only for the "master" branch. Test if "master works or should be Main" 
   push:
     branches: [ "master" ]
   pull_request:
@@ -25,6 +25,9 @@ jobs:
     steps:
       - name: Check out the repository
         uses: actions/checkout@v1
+
+      - name: Install faker from 'npm'
+      uses: DevExpress/faker@latest
 
       # Runs a single command using the runners shell
       - name: Install TestCafe from 'npm' and run tests
