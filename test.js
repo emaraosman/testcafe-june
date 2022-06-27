@@ -1,7 +1,9 @@
 const { Selector } = require("testcafe");
-const { setTestContext} = require("./utilities/main_utils");
+const { setupFixture, setTestContext} = require("./utilities/main_utils");
 const { setupCustomUtilities } = require("./utilities/opencomp_utils");
 const { credentials } = require("./utilities/credentials");
+
+setupFixture();
 
   async (t) => {
     const { getLocation } = setTestContext(t);
