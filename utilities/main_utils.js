@@ -28,18 +28,18 @@ const envDataToReport = {
   testSuiteRunId: `'${testSuiteRunId}'`,
 };
 
-const readSkipConfig = (relativePath = "../../skip.json") => {
-  try {
-    return require(relativePath).skipTestIds;
-  } catch (err) {
-    console.warn("WARNING: No skip config found. Running all tests.");
-    console.log(`Expected skip.json file in the root directory of the test suite`);
-    console.log(`Details: { ${err.message} }\n`);
-    return [];
-  }
-};
+// const readSkipConfig = (relativePath = "../../skip.json") => {
+//   try {
+//     return require(relativePath).skipTestIds;
+//   } catch (err) {
+//     console.warn("WARNING: No skip config found. Running all tests.");
+//     console.log(`Expected skip.json file in the root directory of the test suite`);
+//     console.log(`Details: { ${err.message} }\n`);
+//     return [];
+//   }
+// };
 
-const skipTestIds = readSkipConfig();
+// const skipTestIds = readSkipConfig();
 
 const setupFixture = () => {
   return fixture(`${credentials.customerName} regression tests\nOrigin: ${origin}`)
@@ -68,9 +68,9 @@ const setupFixture = () => {
       },
       /** Inject the tracking snippet (doesn't persist across page loads) **/
       // TODO(dabrady) How do we block the test until this is ready, each time we inject?
-      {
-        path: path.join(__dirname, '../../tracking.js')
-      }
+      // {
+      //   path: path.join(__dirname, '../../tracking.js')
+      // }
     );
 };
 
@@ -82,9 +82,7 @@ const setupFixture = () => {
  * @returns {function} Returns a TestCafe `test` function with chained meta object and (if necessary) skip method
  */
 const wrapTest = ({ id, ...meta }) => {
-  return skipTestIds.includes(id) && !(args.debug || args.edit)
-    ? test.meta({ id, ...meta }).skip
-    : test.meta({ id, ...meta });
+    test.meta({ id, ...meta });
 };
 
 const setTestContext = (t) => {
