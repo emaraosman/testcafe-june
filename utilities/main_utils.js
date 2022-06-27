@@ -28,16 +28,16 @@ const envDataToReport = {
   testSuiteRunId: `'${testSuiteRunId}'`,
 };
 
-const readSkipConfig = (relativePath = "../../skip.json") => {
-  try {
-    return require(relativePath).skipTestIds;
-  } catch (err) {
-    console.warn("WARNING: No skip config found. Running all tests.");
-    console.log(`Expected skip.json file in the root directory of the test suite`);
-    console.log(`Details: { ${err.message} }\n`);
-    return [];
-  }
-};
+// const readSkipConfig = (relativePath = "../../skip.json") => {
+//   try {
+//     return require(relativePath).skipTestIds;
+//   } catch (err) {
+//     console.warn("WARNING: No skip config found. Running all tests.");
+//     console.log(`Expected skip.json file in the root directory of the test suite`);
+//     console.log(`Details: { ${err.message} }\n`);
+//     return [];
+//   }
+// };
 
 const skipTestIds = readSkipConfig();
 

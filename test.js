@@ -44,8 +44,6 @@ const meta = {
   proposedTestcaseIds: ['6f7636853dd93cac79f63e4f2b44b5ca', 'c3a6227a3465391971fe3d1f40d86109'],
 };
 
-wrapTest(meta)(
-  "test_12_use_filters_in_diversity_equity_and_inclusion_tab_6f7636853dd93cac79f63e4f2b44b5ca",
   async (t) => {
     const { getLocation } = setTestContext(t);
     const { login, changeCompany, confirmCookies, logout, createGenScenario, deleteGenScenario} = setupCustomUtilities(t, getLocation);
@@ -129,4 +127,3 @@ wrapTest(meta)(
 
     await logout(t);
   }
-);
