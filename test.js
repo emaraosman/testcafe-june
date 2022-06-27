@@ -9,7 +9,7 @@ const {
 
 const MailBox = require("prodperfect-mailsac").default;
 
-setupFixture();
+setupFixture(); 
 
 const meta = {
 	id: "f2642a8f-fe7a-4e66-9f81-85e8b4092cf2",
