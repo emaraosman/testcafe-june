@@ -1,0 +1,30 @@
+{
+  "name": "opencomp-prodperfectqa",
+  "version": "1.0.0",
+  "description": "Test suite for opencomp",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint tests/",
+    "test": "prodperfectqa-runner --local --agent=\"opencomp\" --browser=chrome:headless",
+    "plop": "plop",
+    "remote": "npm install --no-save -E prodperfectqa-runner@p202df49e07d17fb5fba2d6112b94faf9355528608b0063d9727b1b94a63761a78 && prodperfectqa-runner 3122e2e5075c722cf7acec6860c89a4e4dd96eec --browser=chrome:headless --remote --ref $CIRCLE_BRANCH"
+  },
+  "repository": {},
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {},
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-plugin-prodperfectqa": "~0.2.0",
+    "plop": "^2.7.4",
+    "prodperfectqa-runner": "^0.4.2"
+  },
+  "dependencies": {
+    "faker": "^5.5.3",
+    "minimist": "^1.2.5",
+    "prodperfect-mailsac": "^0.0.9",
+    "uuid": "^8.3.2"
+  }
+}
