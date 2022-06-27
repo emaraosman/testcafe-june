@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Install faker from 'npm'
-      run: npm install faker
+        run: npm install faker
 
       # Runs a single command using the runners shell
       - name: Install TestCafe from 'npm' and run tests
